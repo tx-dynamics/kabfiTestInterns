@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import {View, TouchableOpacity, Image} from 'react-native';
+import BottomSheet from 'react-native-gesture-bottom-sheet';
+import Sheet from '../bottomsheet/index';
 
 export const TwoHead = ({title, navigation, onPress, Text}) => {
   return (
@@ -39,6 +41,7 @@ export const TwoHead = ({title, navigation, onPress, Text}) => {
 };
 
 export const ThreeHead = ({title, navigation, onPress, Text}) => {
+  const bottomSheet = useRef();
   return (
     <View
       style={{
@@ -49,6 +52,9 @@ export const ThreeHead = ({title, navigation, onPress, Text}) => {
         height: 50,
         // alignItems: "center",
       }}>
+      <BottomSheet hasDraggableIcon ref={bottomSheet} height={500} radius={35}>
+        <Sheet />
+      </BottomSheet>
       <View
         style={{
           //   borderWidth: 1,
@@ -57,7 +63,7 @@ export const ThreeHead = ({title, navigation, onPress, Text}) => {
           alignItems: 'center',
           justifyContent: 'center',
         }}>
-        <TouchableOpacity onPress={onPress}>
+        <TouchableOpacity onPress={() => bottomSheet.current.show()}>
           <Image style={{}} source={require('../../assets/icons/menu.png')} />
         </TouchableOpacity>
       </View>
