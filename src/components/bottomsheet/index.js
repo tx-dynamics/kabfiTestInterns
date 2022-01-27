@@ -1,7 +1,10 @@
 import React from 'react';
-import {Text, View, Image} from 'react-native';
+import {Text, View, Image, TouchableOpacity} from 'react-native';
+
+import {useNavigation} from '@react-navigation/native';
 
 const BottomSheet = () => {
+  const navigation = useNavigation();
   return (
     <View style={{margin: 30}}>
       <View style={{flexDirection: 'row', marginBottom: 30}}>
@@ -16,12 +19,16 @@ const BottomSheet = () => {
         </View>
         <Text>Member Since 2021</Text>
       </View>
+
       <View style={{flexDirection: 'row'}}>
         <Image
           style={{height: 20, width: 20, marginRight: 5, marginLeft: 5}}
           source={require('../../assets/icons/editprof.png')}></Image>
-        <Text>Edit Profile</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('MyProfile')}>
+          <Text>Edit Profile</Text>
+        </TouchableOpacity>
       </View>
+
       <Image
         style={{marginTop: 10, marginBottom: 10}}
         source={require('../../assets/icons/line.png')}></Image>
