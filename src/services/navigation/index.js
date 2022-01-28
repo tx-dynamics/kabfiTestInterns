@@ -18,6 +18,7 @@ import Forgotpass from '../../screens/authFlow/forgotpass';
 import Chekmail from '../../screens/authFlow/chekmail';
 import MyProfile from '../../screens/appFlow/myprofile';
 import Settings from '../../screens/appFlow/settings';
+import Planner from '../../screens/appFlow/planner';
 
 const Stack = createStackNavigator();
 
@@ -44,6 +45,7 @@ const MainContainer = props => {
         <Stack.Screen name={'Chekmail'} component={Chekmail} />
         <Stack.Screen name={'MyProfile'} component={MyProfile} />
         <Stack.Screen name={'Settings'} component={Settings} />
+        <Stack.Screen name={'Planner'} component={Planner} />
       </Stack.Navigator>
     </NavigationContainer>
   );

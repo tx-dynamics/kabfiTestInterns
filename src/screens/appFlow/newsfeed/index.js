@@ -132,7 +132,7 @@ const Newsfeed = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Headers.ThreeHead title=<Text>News Feed</Text> />
+      <Headers.ThreeHead title={<Text>News Feed</Text>} />
 
       <FlatList
         data={DATA}

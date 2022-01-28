@@ -4,6 +4,7 @@ import BottomSheet from 'react-native-gesture-bottom-sheet';
 import Sheet from '../bottomsheet/index';
 
 export const TwoHead = ({title, navigation, onPress}) => {
+  const bottomSheet = useRef();
   return (
     <View
       style={{
@@ -14,6 +15,9 @@ export const TwoHead = ({title, navigation, onPress}) => {
         height: 50,
         // alignItems: "center",
       }}>
+      <BottomSheet hasDraggableIcon ref={bottomSheet} height={500} radius={35}>
+        <Sheet />
+      </BottomSheet>
       <View
         style={{
           //   borderWidth: 1,
@@ -22,9 +26,15 @@ export const TwoHead = ({title, navigation, onPress}) => {
           alignItems: 'center',
           justifyContent: 'center',
         }}>
-        <TouchableOpacity onPress={onPress}>
-          <Image style={{}} source={require('../../assets/icons/back.png')} />
-        </TouchableOpacity>
+        {title == 'Planner' ? (
+          <TouchableOpacity onPress={() => bottomSheet.current.show()}>
+            <Image style={{}} source={require('../../assets/icons/menu.png')} />
+          </TouchableOpacity>
+        ) : (
+          <TouchableOpacity onPress={onPress}>
+            <Image style={{}} source={require('../../assets/icons/back.png')} />
+          </TouchableOpacity>
+        )}
       </View>
       <View
         style={{

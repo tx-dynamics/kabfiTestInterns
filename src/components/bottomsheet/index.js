@@ -63,7 +63,9 @@ const BottomSheet = () => {
         <Image
           style={{height: 20, width: 20, marginRight: 5, marginLeft: 5}}
           source={require('../../assets/icons/editprof.png')}></Image>
-        <Text>Edit Profile</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('Planner')}>
+          <Text>Edit Profile</Text>
+        </TouchableOpacity>
       </View>
       <Image
         style={{marginTop: 10, marginBottom: 10}}

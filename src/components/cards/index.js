@@ -7,6 +7,7 @@ import {
   Modal,
   TouchableOpacity,
 } from 'react-native';
+import {width, height, totalSize} from 'react-native-dimension';
 
 export const NotifiCard = () => {
   return (
@@ -248,5 +249,69 @@ export const FeedbackCard = ({
         </View>
       </View>
     </View>
+  );
+};
+
+export const HoriScroCard = ({
+  title,
+  time,
+  date,
+  profImage,
+
+  pressor,
+
+  onPress,
+}) => {
+  return (
+    <TouchableOpacity
+      style={{
+        borderRadius: 30,
+        margin: 10,
+        justifyContent: 'center',
+        backgroundColor: 'aliceblue',
+        width: width(100) / 2.5,
+      }}>
+      <ImageBackground source={profImage} style={{}}>
+        <View style={{}}>
+          <Text>{title}</Text>
+          <Text>{time}</Text>
+          <Text>{date}</Text>
+        </View>
+      </ImageBackground>
+    </TouchableOpacity>
+  );
+};
+
+export const VertiScroCard = ({
+  title,
+  time,
+  date,
+  profImage,
+
+  pressor,
+
+  onPress,
+}) => {
+  return (
+    <TouchableOpacity
+      style={{
+        borderRadius: 20,
+        margin: 10,
+        justifyContent: 'center',
+        backgroundColor: '#F6F6F6',
+
+        height: height(12),
+      }}>
+      <View style={{flexDirection: 'row'}}>
+        <Image
+          style={{marginRight: 10, marginLeft: 10}}
+          source={profImage}></Image>
+        <View>
+          <Text style={{fontWeight: 'bold'}}>{title}</Text>
+          <Text>{date}</Text>
+          <Text>{time}</Text>
+        </View>
+      </View>
+    </TouchableOpacity>
   );
 };
