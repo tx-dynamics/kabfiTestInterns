@@ -9,13 +9,13 @@ import {
   Image,
   TextInput,
 } from 'react-native';
-import {appStyles} from '../../../services';
+import {fontFamily} from '../../../services';
 import {useNavigation} from '@react-navigation/native';
 
 const Feedback2 = props => {
   const navigation = useNavigation();
   return (
-    <ScrollView>
+    <ScrollView style={{backgroundColor: '#FFFFFF'}}>
       <View style={{flexDirection: 'column'}}>
         <View
           style={{
@@ -36,21 +36,31 @@ const Feedback2 = props => {
               justifyContent: 'center',
               right: 100,
             }}>
-            <Text style={{}}>What made you angry?</Text>
+            <Text
+              style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+              What made you angry?
+            </Text>
           </View>
         </View>
         <View style={{flex: 1}}>
           <TouchableOpacity
             style={{
-              backgroundColor: '#FCB040',
-              height: 40,
+              backgroundColor: '#FFFFFF',
+              height: 45,
               margin: 12,
 
+              borderColor: '#FCB040',
+              borderWidth: 1,
               padding: 10,
-              borderRadius: 20,
+              borderRadius: 25,
             }}
             onPress={() => navigation.navigate('Kabficard')}>
-            <Text style={{textAlign: 'center', color: '#FFFFFF'}}>
+            <Text
+              style={{
+                textAlign: 'center',
+                color: '#FCB040',
+                fontFamily: fontFamily.appTextRegular,
+              }}>
               Ease of use
             </Text>
           </TouchableOpacity>
@@ -59,16 +69,21 @@ const Feedback2 = props => {
           <TouchableOpacity
             style={{
               backgroundColor: '#FFFFFF',
-              height: 40,
+              height: 45,
               margin: 12,
 
               borderColor: '#FCB040',
               borderWidth: 1,
               padding: 10,
-              borderRadius: 20,
+              borderRadius: 25,
             }}
             onPress={''}>
-            <Text style={{textAlign: 'center', color: '#FCB040'}}>
+            <Text
+              style={{
+                textAlign: 'center',
+                color: '#FCB040',
+                fontFamily: fontFamily.appTextRegular,
+              }}>
               Usefulness
             </Text>
           </TouchableOpacity>
@@ -77,15 +92,20 @@ const Feedback2 = props => {
           <TouchableOpacity
             style={{
               backgroundColor: '#FFFFFF',
-              height: 40,
+              height: 45,
               margin: 12,
               borderColor: '#FCB040',
               borderWidth: 1,
               padding: 10,
-              borderRadius: 20,
+              borderRadius: 25,
             }}
             onPress={''}>
-            <Text style={{textAlign: 'center', color: '#FCB040'}}>
+            <Text
+              style={{
+                textAlign: 'center',
+                color: '#FCB040',
+                fontFamily: fontFamily.appTextRegular,
+              }}>
               Technical Performance{' '}
             </Text>
           </TouchableOpacity>
@@ -94,15 +114,20 @@ const Feedback2 = props => {
           <TouchableOpacity
             style={{
               backgroundColor: '#FFFFFF',
-              height: 40,
+              height: 45,
               margin: 12,
               borderColor: '#FCB040',
               borderWidth: 1,
               padding: 10,
-              borderRadius: 20,
+              borderRadius: 25,
             }}
             onPress={''}>
-            <Text style={{textAlign: 'center', color: '#FCB040'}}>
+            <Text
+              style={{
+                textAlign: 'center',
+                color: '#FCB040',
+                fontFamily: fontFamily.appTextRegular,
+              }}>
               Application design
             </Text>
           </TouchableOpacity>
@@ -111,15 +136,22 @@ const Feedback2 = props => {
           <TouchableOpacity
             style={{
               backgroundColor: '#FFFFFF',
-              height: 40,
+              height: 45,
               margin: 12,
               borderColor: '#FCB040',
               borderWidth: 1,
               padding: 10,
-              borderRadius: 20,
+              borderRadius: 25,
             }}
             onPress={''}>
-            <Text style={{textAlign: 'center', color: '#FCB040'}}>Other</Text>
+            <Text
+              style={{
+                textAlign: 'center',
+                color: '#FCB040',
+                fontFamily: fontFamily.appTextRegular,
+              }}>
+              Other
+            </Text>
           </TouchableOpacity>
         </View>
         <View style={{flex: 1, flexDirection: 'row'}}>
@@ -127,15 +159,20 @@ const Feedback2 = props => {
             <TouchableOpacity
               style={{
                 backgroundColor: '#FFFFFF',
-                height: 40,
+                height: 45,
                 margin: 12,
                 borderColor: '#FCB040',
                 borderWidth: 1,
                 padding: 10,
-                borderRadius: 20,
+                borderRadius: 25,
               }}
               onPress={''}>
-              <Text style={{textAlign: 'center', color: '#FCB040'}}>
+              <Text
+                style={{
+                  textAlign: 'center',
+                  color: '#FCB040',
+                  fontFamily: fontFamily.appTextRegular,
+                }}>
                 Previous
               </Text>
             </TouchableOpacity>
@@ -144,15 +181,22 @@ const Feedback2 = props => {
             <TouchableOpacity
               style={{
                 backgroundColor: '#FFFFFF',
-                height: 40,
+                height: 45,
                 margin: 12,
                 borderColor: '#FCB040',
                 borderWidth: 1,
                 padding: 10,
-                borderRadius: 20,
+                borderRadius: 25,
               }}
               onPress={''}>
-              <Text style={{textAlign: 'center', color: '#FCB040'}}>Next</Text>
+              <Text
+                style={{
+                  textAlign: 'center',
+                  color: '#FCB040',
+                  fontFamily: fontFamily.appTextRegular,
+                }}>
+                Next
+              </Text>
             </TouchableOpacity>
           </View>
         </View>

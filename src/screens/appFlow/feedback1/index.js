@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import {appStyles} from '../../../services';
 import {useNavigation} from '@react-navigation/native';
+import {fontFamily} from '../../../services';
 
 const Feedback1 = props => {
   const navigation = useNavigation();
@@ -21,9 +22,10 @@ const Feedback1 = props => {
           <Text
             style={{
               marginTop: 50,
-              fontFamily: 'Roboto-Medium',
+
               color: '#464646',
               textAlign: 'center',
+              fontFamily: fontFamily.appTextBold,
             }}>
             Happiness Meter
           </Text>

@@ -12,6 +12,7 @@ import {
 import {Buttons} from '../../../components';
 import {appStyles} from '../../../services';
 import {useNavigation} from '@react-navigation/native';
+import {fontFamily} from '../../../services';
 
 const Chekmail = props => {
   const navigation = useNavigation();
@@ -26,12 +27,24 @@ const Chekmail = props => {
         </View>
         <View style={{flexDirection: 'column'}}>
           <View style={{flex: 1, marginTop: 30}}>
-            <Text style={{textAlign: 'center', fontWeight: 'bold'}}>
+            <Text
+              style={{
+                textAlign: 'center',
+                fontFamily: fontFamily.appTextBold,
+                color: '#464646',
+              }}>
               Check your Email
             </Text>
           </View>
           <View style={{flex: 1, marginTop: 10}}>
-            <Text style={{textAlign: 'center'}}>
+            <Text
+              style={{
+                textAlign: 'center',
+                fontFamily: fontFamily.appTextRegular,
+                color: '#464646',
+                marginLeft: 12,
+                marginRight: 12,
+              }}>
               We have sent password recovery instructions to your email.
             </Text>
           </View>

@@ -16,6 +16,7 @@ import {useNavigation} from '@react-navigation/native';
 import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {width} from 'react-native-dimension';
+import {fontFamily} from '../../../services';
 
 const DATA = [
   {
@@ -132,7 +133,13 @@ const Newsfeed = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Headers.ThreeHead title={<Text>News Feed</Text>} />
+      <Headers.ThreeHead
+        title={
+          <Text style={{fontFamily: fontFamily.appTextBold, color: '#464646'}}>
+            News Feed
+          </Text>
+        }
+      />
 
       <FlatList
         data={DATA}

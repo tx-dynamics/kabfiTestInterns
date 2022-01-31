@@ -2,6 +2,7 @@ import React from 'react';
 import {Text, View, Image, TouchableOpacity} from 'react-native';
 
 import {useNavigation} from '@react-navigation/native';
+import {fontFamily} from '../../services';
 
 const BottomSheet = () => {
   const navigation = useNavigation();
@@ -12,12 +13,22 @@ const BottomSheet = () => {
           style={{marginRight: 10}}
           source={require('../../assets/images/prof.png')}></Image>
         <View>
-          <Text style={{fontWeight: 'bold', marginRight: 10}}>
+          <Text
+            style={{
+              fontFamily: fontFamily.appTextBold,
+              color: '#464646',
+              marginRight: 10,
+            }}>
             John Thompson
           </Text>
-          <Text>4.92 *</Text>
+          <Text
+            style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+            4.92 *
+          </Text>
         </View>
-        <Text>Member Since 2021</Text>
+        <Text style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+          Member Since 2021
+        </Text>
       </View>
 
       <View style={{flexDirection: 'row'}}>
@@ -25,7 +36,10 @@ const BottomSheet = () => {
           style={{height: 20, width: 20, marginRight: 5, marginLeft: 5}}
           source={require('../../assets/icons/editprof.png')}></Image>
         <TouchableOpacity onPress={() => navigation.navigate('MyProfile')}>
-          <Text>Edit Profile</Text>
+          <Text
+            style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+            Edit Profile
+          </Text>
         </TouchableOpacity>
       </View>
 
@@ -36,7 +50,9 @@ const BottomSheet = () => {
         <Image
           style={{marginRight: 5, height: 20, width: 20, marginLeft: 5}}
           source={require('../../assets/icons/editprof.png')}></Image>
-        <Text>Edit Profile</Text>
+        <Text style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+          Kab Card
+        </Text>
       </View>
       <Image
         style={{marginTop: 10, marginBottom: 10}}
@@ -45,7 +61,9 @@ const BottomSheet = () => {
         <Image
           style={{height: 20, width: 20, marginRight: 5, marginLeft: 5}}
           source={require('../../assets/icons/refer-taxi.png')}></Image>
-        <Text>Edit Profile</Text>
+        <Text style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+          Refer a taxicab driver
+        </Text>
       </View>
       <Image
         style={{marginTop: 10, marginBottom: 10}}
@@ -54,7 +72,9 @@ const BottomSheet = () => {
         <Image
           style={{height: 20, width: 20, marginRight: 5, marginLeft: 5}}
           source={require('../../assets/icons/hotspot.png')}></Image>
-        <Text>Edit Profile</Text>
+        <Text style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+          Hot Spots
+        </Text>
       </View>
       <Image
         style={{marginTop: 10, marginBottom: 10}}
@@ -64,7 +84,10 @@ const BottomSheet = () => {
           style={{height: 20, width: 20, marginRight: 5, marginLeft: 5}}
           source={require('../../assets/icons/editprof.png')}></Image>
         <TouchableOpacity onPress={() => navigation.navigate('Planner')}>
-          <Text>Edit Profile</Text>
+          <Text
+            style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+            Planner
+          </Text>
         </TouchableOpacity>
       </View>
       <Image
@@ -75,7 +98,10 @@ const BottomSheet = () => {
           style={{height: 20, width: 20, marginRight: 5, marginLeft: 5}}
           source={require('../../assets/icons/settings.png')}></Image>
         <TouchableOpacity onPress={() => navigation.navigate('Settings')}>
-          <Text>Edit Profile</Text>
+          <Text
+            style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+            Settings
+          </Text>
         </TouchableOpacity>
       </View>
       <Image
@@ -85,7 +111,9 @@ const BottomSheet = () => {
         <Image
           style={{height: 20, width: 20, marginRight: 5, marginLeft: 5}}
           source={require('../../assets/icons/feedback.png')}></Image>
-        <Text>Edit Profile</Text>
+        <Text style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+          Feedback
+        </Text>
       </View>
       <Image
         style={{marginTop: 10, marginBottom: 10}}
@@ -94,7 +122,9 @@ const BottomSheet = () => {
         <Image
           style={{height: 20, width: 20, marginRight: 5, marginLeft: 5}}
           source={require('../../assets/icons/help.png')}></Image>
-        <Text>Edit Profile</Text>
+        <Text style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+          Help
+        </Text>
       </View>
       <Image
         style={{marginTop: 10, marginBottom: 10}}
@@ -103,7 +133,9 @@ const BottomSheet = () => {
         <Image
           style={{height: 20, width: 20, marginRight: 5, marginLeft: 5}}
           source={require('../../assets/icons/legal.png')}></Image>
-        <Text>Edit Profile</Text>
+        <Text style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+          Legal
+        </Text>
       </View>
     </View>
   );

@@ -1,19 +1,26 @@
 import React from 'react';
 import {View, TouchableOpacity, Image, Text} from 'react-native';
+import {fontFamily} from '../../services';
 
 export const PrimaryButton = ({title, navigation, onPress}) => {
   return (
     <TouchableOpacity
       style={{
         backgroundColor: '#FCB040',
-        height: 40,
+        height: 45,
         margin: 12,
-
         padding: 10,
-        borderRadius: 20,
+        borderRadius: 25,
       }}
       onPress={onPress}>
-      <Text style={{textAlign: 'center', color: '#FFFFFF'}}>{title}</Text>
+      <Text
+        style={{
+          textAlign: 'center',
+          color: '#FFFFFF',
+          fontFamily: fontFamily.appTextRegular,
+        }}>
+        {title}
+      </Text>
     </TouchableOpacity>
   );
 };

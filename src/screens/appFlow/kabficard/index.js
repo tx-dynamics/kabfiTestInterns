@@ -12,6 +12,7 @@ import {
 
 import {appStyles} from '../../../services';
 import {useNavigation} from '@react-navigation/native';
+import {fontFamily} from '../../../services';
 
 const Kabficard = props => {
   const navigation = useNavigation();
@@ -22,7 +23,7 @@ const Kabficard = props => {
           <Text
             style={{
               marginTop: 15,
-              fontFamily: 'Roboto-Medium',
+              fontFamily: fontFamily.appTextBold,
               color: '#464646',
               textAlign: 'center',
             }}>
@@ -55,7 +56,12 @@ const Kabficard = props => {
           />
         </View>
         <View style={{flex: 1, marginLeft: 30, marginRight: 30}}>
-          <Text style={{textAlign: 'center'}}>
+          <Text
+            style={{
+              textAlign: 'center',
+              fontFamily: fontFamily.appTextRegular,
+              color: '#464646',
+            }}>
             You can get your discount by showing your Kabfi Card or at the
             checkout.
           </Text>
@@ -77,9 +83,13 @@ const Kabficard = props => {
           />
         </View>
         <View style={{flex: 1, marginTop: 10, marginLeft: 30, marginRight: 30}}>
-          <Text style={{textAlign: 'center'}}>
-            You can get your discount by showing your Kabfi Card or at the
-            checkout.
+          <Text
+            style={{
+              textAlign: 'center',
+              color: '#464646',
+              fontFamily: fontFamily.appTextRegular,
+            }}>
+            Sponsored by JOE & THE JUICE
           </Text>
           <View>
             <TouchableOpacity

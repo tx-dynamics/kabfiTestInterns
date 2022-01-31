@@ -13,6 +13,7 @@ import {
 import {appStyles} from '../../../services';
 import {useNavigation} from '@react-navigation/native';
 import {Headers} from '../../../components';
+import {fontFamily} from '../../../services';
 
 const MyProfile = props => {
   const navigation = useNavigation();
@@ -45,10 +46,19 @@ const MyProfile = props => {
             marginTop: 10,
             marginBottom: 10,
             marginLeft: 10,
+            fontFamily: fontFamily.appTextRegular,
           }}>
           First Name
         </Text>
-        <Text style={{marginBottom: 2, marginLeft: 10}}>John</Text>
+        <Text
+          style={{
+            marginBottom: 2,
+            marginLeft: 10,
+            fontFamily: fontFamily.appTextRegular,
+            color: '#464646',
+          }}>
+          John
+        </Text>
         <Image source={require('../../../assets/icons/line.png')}></Image>
         <Text
           style={{
@@ -56,10 +66,19 @@ const MyProfile = props => {
             marginTop: 10,
             marginBottom: 10,
             marginLeft: 10,
+            fontFamily: fontFamily.appTextRegular,
           }}>
           Last Name
         </Text>
-        <Text style={{marginBottom: 2, marginLeft: 10}}>Thompson</Text>
+        <Text
+          style={{
+            marginBottom: 2,
+            marginLeft: 10,
+            fontFamily: fontFamily.appTextRegular,
+            color: '#464646',
+          }}>
+          Thompson
+        </Text>
         <Image source={require('../../../assets/icons/line.png')}></Image>
         <Text
           style={{
@@ -67,10 +86,19 @@ const MyProfile = props => {
             marginTop: 10,
             marginBottom: 10,
             marginLeft: 10,
+            fontFamily: fontFamily.appTextRegular,
           }}>
           Password
         </Text>
-        <Text style={{marginBottom: 2, marginLeft: 10}}>********</Text>
+        <Text
+          style={{
+            marginBottom: 2,
+            marginLeft: 10,
+            fontFamily: fontFamily.appTextRegular,
+            color: '#464646',
+          }}>
+          ********
+        </Text>
         <Image source={require('../../../assets/icons/line.png')}></Image>
         <Text
           style={{
@@ -78,10 +106,19 @@ const MyProfile = props => {
             marginTop: 10,
             marginBottom: 10,
             marginLeft: 10,
+            fontFamily: fontFamily.appTextRegular,
           }}>
           Phone Number
         </Text>
-        <Text style={{marginBottom: 2, marginLeft: 10}}>+44 77 000 00 000</Text>
+        <Text
+          style={{
+            marginBottom: 2,
+            marginLeft: 10,
+            fontFamily: fontFamily.appTextRegular,
+            color: '#464646',
+          }}>
+          +44 77 000 00 000
+        </Text>
         <Image source={require('../../../assets/icons/line.png')}></Image>
         <Text
           style={{
@@ -89,10 +126,19 @@ const MyProfile = props => {
             marginTop: 10,
             marginBottom: 10,
             marginLeft: 10,
+            fontFamily: fontFamily.appTextRegular,
           }}>
           Email
         </Text>
-        <Text style={{marginBottom: 2, marginLeft: 10}}>user@gmail.com</Text>
+        <Text
+          style={{
+            marginBottom: 2,
+            marginLeft: 10,
+            fontFamily: fontFamily.appTextRegular,
+            color: '#464646',
+          }}>
+          user@gmail.com
+        </Text>
         <Image source={require('../../../assets/icons/line.png')}></Image>
         <Text
           style={{
@@ -100,10 +146,19 @@ const MyProfile = props => {
             marginTop: 10,
             marginBottom: 10,
             marginLeft: 10,
+            fontFamily: fontFamily.appTextRegular,
           }}>
           City, State
         </Text>
-        <Text style={{marginBottom: 2, marginLeft: 10}}>London</Text>
+        <Text
+          style={{
+            marginBottom: 2,
+            marginLeft: 10,
+            fontFamily: fontFamily.appTextRegular,
+            color: '#464646',
+          }}>
+          London
+        </Text>
         <Image source={require('../../../assets/icons/line.png')}></Image>
         <Text
           style={{
@@ -111,10 +166,19 @@ const MyProfile = props => {
             marginTop: 10,
             marginBottom: 10,
             marginLeft: 10,
+            fontFamily: fontFamily.appTextRegular,
           }}>
           Country
         </Text>
-        <Text style={{marginBottom: 2, marginLeft: 10}}>United Kingdom</Text>
+        <Text
+          style={{
+            marginBottom: 2,
+            marginLeft: 10,
+            fontFamily: fontFamily.appTextRegular,
+            color: '#464646',
+          }}>
+          United Kingdom
+        </Text>
         <Image source={require('../../../assets/icons/line.png')}></Image>
       </View>
     </ScrollView>

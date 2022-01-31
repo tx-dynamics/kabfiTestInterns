@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import {width, height, totalSize} from 'react-native-dimension';
+import {fontFamily} from '../../services';
 
 export const NotifiCard = () => {
   return (
@@ -142,8 +143,13 @@ export const FeedbackCard = ({
             marginBottom: 20,
             marginLeft: 10,
           }}>
-          <Text>{title}</Text>
-          <Text>{descr}</Text>
+          <Text style={{fontFamily: fontFamily.appTextBold, color: '#464646'}}>
+            {title}
+          </Text>
+          <Text
+            style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+            {descr}
+          </Text>
         </View>
 
         <Image
@@ -179,7 +185,10 @@ export const FeedbackCard = ({
             flex: 2,
           }}>
           <View style={{flex: 1}}>
-            <Text>{scenedescr}</Text>
+            <Text
+              style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+              {scenedescr}
+            </Text>
           </View>
           <View style={{flex: 1}}>
             <TouchableOpacity
@@ -264,6 +273,7 @@ export const HoriScroCard = ({
 }) => {
   return (
     <TouchableOpacity
+      onPress={onPress}
       style={{
         borderRadius: 30,
         margin: 10,
@@ -273,9 +283,17 @@ export const HoriScroCard = ({
       }}>
       <ImageBackground source={profImage} style={{}}>
         <View style={{}}>
-          <Text>{title}</Text>
-          <Text>{time}</Text>
-          <Text>{date}</Text>
+          <Text style={{fontFamily: fontFamily.appTextBold, color: '#464646'}}>
+            {title}
+          </Text>
+          <Text
+            style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+            {time}
+          </Text>
+          <Text
+            style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+            {date}
+          </Text>
         </View>
       </ImageBackground>
     </TouchableOpacity>
@@ -307,9 +325,17 @@ export const VertiScroCard = ({
           style={{marginRight: 10, marginLeft: 10}}
           source={profImage}></Image>
         <View>
-          <Text style={{fontWeight: 'bold'}}>{title}</Text>
-          <Text>{date}</Text>
-          <Text>{time}</Text>
+          <Text style={{fontFamily: fontFamily.appTextBold, color: '#464646'}}>
+            {title}
+          </Text>
+          <Text
+            style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+            {date}
+          </Text>
+          <Text
+            style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+            {time}
+          </Text>
         </View>
       </View>
     </TouchableOpacity>

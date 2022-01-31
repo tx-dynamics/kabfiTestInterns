@@ -12,6 +12,7 @@ import {
 import {Buttons} from '../../../components';
 import {appStyles} from '../../../services';
 import {useNavigation} from '@react-navigation/native';
+import {fontFamily} from '../../../services';
 
 const Verify = props => {
   const navigation = useNavigation();
@@ -25,15 +26,21 @@ const Verify = props => {
           />
         </View>
         <View style={{flexDirection: 'column'}}>
-          <View style={{flex: 1, marginTop: 30}}>
-            <Text style={{textAlign: 'center', fontWeight: 'bold'}}>
+          <View
+            style={{flex: 1, marginTop: 30, marginLeft: 12, marginRight: 12}}>
+            <Text
+              style={{
+                textAlign: 'center',
+                color: '#464646',
+                fontFamily: fontFamily.appTextBold,
+              }}>
               Your account should be approved within 24 hours
             </Text>
           </View>
           <View style={{marginTop: 30}}>
             <Buttons.PrimaryButton
               onPress={() => navigation.navigate('Signin')}
-              title=<Text>CLOSE THE APP</Text>
+              title={<Text>CLOSE THE APP</Text>}
             />
           </View>
         </View>

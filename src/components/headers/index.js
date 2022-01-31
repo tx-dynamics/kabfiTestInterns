@@ -2,6 +2,7 @@ import React, {useRef} from 'react';
 import {View, TouchableOpacity, Image, Text} from 'react-native';
 import BottomSheet from 'react-native-gesture-bottom-sheet';
 import Sheet from '../bottomsheet/index';
+import {fontFamily} from '../../services';
 
 export const TwoHead = ({title, navigation, onPress}) => {
   const bottomSheet = useRef();
@@ -44,7 +45,9 @@ export const TwoHead = ({title, navigation, onPress}) => {
           alignItems: 'center',
           justifyContent: 'center',
         }}>
-        {title}
+        <Text style={{fontFamily: fontFamily.appTextBold, color: '#464646'}}>
+          {title}
+        </Text>
       </View>
     </View>
   );
@@ -129,7 +132,9 @@ export const ThreeTextHead = ({
           justifyContent: 'center',
         }}>
         <TouchableOpacity onPress={() => bottomSheet.current.show()}>
-          <Text>{textLeft}</Text>
+          <Text style={{fontFamily: fontFamily.appTextBold, color: '#464646'}}>
+            {textLeft}
+          </Text>
         </TouchableOpacity>
       </View>
       <View
@@ -140,7 +145,9 @@ export const ThreeTextHead = ({
           alignItems: 'center',
           justifyContent: 'center',
         }}>
-        {title}
+        <Text style={{fontFamily: fontFamily.appTextBold, color: '#464646'}}>
+          {title}
+        </Text>
       </View>
       <View
         style={{
@@ -151,7 +158,9 @@ export const ThreeTextHead = ({
           justifyContent: 'center',
         }}>
         <TouchableOpacity onPress={onPress}>
-          <Text>{textRight}</Text>
+          <Text style={{fontFamily: fontFamily.appTextBold, color: '#464646'}}>
+            {textRight}
+          </Text>
         </TouchableOpacity>
       </View>
     </View>

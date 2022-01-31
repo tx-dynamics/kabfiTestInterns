@@ -14,6 +14,8 @@ import {
 
 import {width, height, totalSize} from 'react-native-dimension';
 import {Cards, Headers} from '../../../components';
+import {useNavigation} from '@react-navigation/native';
+import {fontFamily} from '../../../services';
 
 const DATAVerti = [
   {
@@ -85,6 +87,7 @@ const HoriItem = ({
     date={date}
     profImage={profImage}
     pressor={pressor}
+    onPress={onPress}
   />
 );
 
@@ -107,6 +110,7 @@ const VertiItem = ({
   />
 );
 const Planner = () => {
+  const navigation = useNavigation();
   const renderHoriItem = ({item}) => (
     <HoriItem
       title={item.title}
@@ -116,7 +120,7 @@ const Planner = () => {
       pressor={() => {
         console.log('Ok pressed');
       }}
-      onPress={() => {}}
+      onPress={() => navigation.navigate('PlannerInside')}
     />
   );
 
@@ -135,10 +139,21 @@ const Planner = () => {
   return (
     <View style={{flex: 1, backgroundColor: '#FFFFFF'}}>
       <Headers.TwoHead title={<Text>Planner</Text>} />
-      <Text style={{fontWeight: 'bold', margin: 10}}>
+      <Text
+        style={{
+          margin: 10,
+          fontFamily: fontFamily.appTextBold,
+          color: '#464646',
+        }}>
         Upcoming Events in London
       </Text>
-      <Text style={{marginLeft: 10, marginBottom: 10}}>
+      <Text
+        style={{
+          marginLeft: 10,
+          marginBottom: 10,
+          fontFamily: fontFamily.appTextRegular,
+          color: '#464646',
+        }}>
         There's so much happening in London all this month round{' '}
       </Text>
 
@@ -152,7 +167,14 @@ const Planner = () => {
           keyExtractor={item => item.id}
         />
       </View>
-      <Text style={{fontWeight: 'bold', margin: 10}}>Discover</Text>
+      <Text
+        style={{
+          fontFamily: fontFamily.appTextBold,
+          margin: 10,
+          color: '#464646',
+        }}>
+        Discover
+      </Text>
 
       <FlatList
         data={DATAVerti}
