@@ -188,7 +188,7 @@ const Feedback2 = props => {
                 padding: 10,
                 borderRadius: 25,
               }}
-              onPress={''}>
+              onPress={() => navigation.navigate('Feedback3')}>
               <Text
                 style={{
                   textAlign: 'center',

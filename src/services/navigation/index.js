@@ -13,6 +13,8 @@ import Notifications from '../../screens/appFlow/notifications';
 import Map from '../../screens/appFlow/map';
 import Feedback1 from '../../screens/appFlow/feedback1';
 import Feedback2 from '../../screens/appFlow/feedback2';
+import Feedback3 from '../../screens/appFlow/feedback3';
+import Feedback4 from '../../screens/appFlow/feedback4';
 import Kabficard from '../../screens/appFlow/kabficard';
 import Forgotpass from '../../screens/authFlow/forgotpass';
 import Chekmail from '../../screens/authFlow/chekmail';
@@ -41,6 +43,8 @@ const MainContainer = props => {
         <Stack.Screen name={'Map'} component={Map} />
         <Stack.Screen name={'Feedback1'} component={Feedback1} />
         <Stack.Screen name={'Feedback2'} component={Feedback2} />
+        <Stack.Screen name={'Feedback3'} component={Feedback3} />
+        <Stack.Screen name={'Feedback4'} component={Feedback4} />
         <Stack.Screen name={'Kabficard'} component={Kabficard} />
         <Stack.Screen name={'Forgotpass'} component={Forgotpass} />
         <Stack.Screen name={'Chekmail'} component={Chekmail} />
