@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import {width, height, totalSize} from 'react-native-dimension';
-import {fontFamily} from '../../services';
+import {fontFamily, fontSize} from '../../services';
 
 export const NotifiCard = () => {
   return (
@@ -147,7 +147,11 @@ export const FeedbackCard = ({
             {title}
           </Text>
           <Text
-            style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+            style={{
+              fontFamily: fontFamily.appTextRegular,
+              color: '#464646',
+              fontSize: fontSize.regular,
+            }}>
             {descr}
           </Text>
         </View>
@@ -157,7 +161,7 @@ export const FeedbackCard = ({
           style={{
             height: 25,
             width: 5,
-            marginLeft: 190,
+            marginLeft: 140,
           }}
         />
       </View>
@@ -278,20 +282,24 @@ export const HoriScroCard = ({
         borderRadius: 30,
         margin: 10,
         justifyContent: 'center',
-        backgroundColor: 'aliceblue',
         width: width(100) / 2.5,
       }}>
-      <ImageBackground source={profImage} style={{}}>
-        <View style={{}}>
-          <Text style={{fontFamily: fontFamily.appTextBold, color: '#464646'}}>
+      <ImageBackground source={profImage} style={{flex: 1}}>
+        <View style={{justifyContent: 'flex-end', flex: 1, margin: 10}}>
+          <Text
+            style={{
+              fontFamily: fontFamily.appTextBold,
+              color: '#FFFFFF',
+              fontSize: fontSize.h6,
+            }}>
             {title}
           </Text>
           <Text
-            style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+            style={{fontFamily: fontFamily.appTextRegular, color: '#FFFFFF'}}>
             {time}
           </Text>
           <Text
-            style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+            style={{fontFamily: fontFamily.appTextRegular, color: '#FFFFFF'}}>
             {date}
           </Text>
         </View>

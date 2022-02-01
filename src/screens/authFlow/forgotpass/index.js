@@ -12,7 +12,7 @@ import {
 import {Buttons} from '../../../components';
 import {appStyles} from '../../../services';
 import {useNavigation} from '@react-navigation/native';
-import {fontFamily} from '../../../services';
+import {fontFamily, fontSize} from '../../../services';
 
 const Forgotpass = props => {
   const navigation = useNavigation();
@@ -64,7 +64,7 @@ const Forgotpass = props => {
               placeholder="Email Address"
               placeholderTextColor="#464646"></TextInput>
           </View>
-          <View style={{flex: 1, marginTop: 30}}>
+          <View style={{flex: 1}}>
             <Buttons.PrimaryButton
               onPress={() => navigation.navigate('Chekmail')}
               title={<Text>SUBMIT</Text>}

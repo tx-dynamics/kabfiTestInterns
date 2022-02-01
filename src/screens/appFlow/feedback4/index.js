@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import {appStyles} from '../../../services';
 import {useNavigation} from '@react-navigation/native';
-import {fontFamily} from '../../../services';
+import {fontFamily, fontSize} from '../../../services';
 import {Buttons} from '../../../components';
 
 const Feedback4 = props => {
@@ -48,6 +48,7 @@ const Feedback4 = props => {
             fontFamily: fontFamily.appTextBold,
             color: '#464646',
             textAlign: 'center',
+            fontSize: fontSize.h4,
           }}>
           THANK YOU
         </Text>

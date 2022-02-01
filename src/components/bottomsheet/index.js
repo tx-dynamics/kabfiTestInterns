@@ -50,9 +50,12 @@ const BottomSheet = () => {
         <Image
           style={{marginRight: 5, height: 20, width: 20, marginLeft: 5}}
           source={require('../../assets/icons/editprof.png')}></Image>
-        <Text style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
-          Kab Card
-        </Text>
+        <TouchableOpacity onPress={() => navigation.navigate('Kabficard')}>
+          <Text
+            style={{fontFamily: fontFamily.appTextRegular, color: '#464646'}}>
+            Kab Card
+          </Text>
+        </TouchableOpacity>
       </View>
       <Image
         style={{marginTop: 10, marginBottom: 10}}

@@ -15,7 +15,7 @@ import {
 import {width, height, totalSize} from 'react-native-dimension';
 import {Cards, Headers} from '../../../components';
 import {useNavigation} from '@react-navigation/native';
-import {fontFamily} from '../../../services';
+import {fontFamily, fontSize} from '../../../services';
 
 const DATAVerti = [
   {
@@ -44,28 +44,28 @@ const DATAVerti = [
 const DATAHori = [
   {
     id: '1',
-    title: 'Ricky Gervais',
+    title: 'RICKY GERVAIS',
     time: 'Tomorrow',
     date: 'Wed, 15 Sept',
     profImage: require('../../../assets/images/ricky-gervais.png'),
   },
   {
     id: '2',
-    title: 'Ricky Gervais',
+    title: 'RICKY GERVAIS',
     time: 'Tomorrow',
     date: 'Wed, 15 Sept',
     profImage: require('../../../assets/images/ricky-gervais.png'),
   },
   {
     id: '3',
-    title: 'Ricky Gervais',
+    title: 'RICKY GERVAIS',
     time: 'Tomorrow',
     date: 'Wed, 15 Sept',
     profImage: require('../../../assets/images/ricky-gervais.png'),
   },
   {
     id: '4',
-    title: 'Ricky Gervais',
+    title: 'RICKY GERVAIS',
     time: 'Tomorrow',
     date: 'Wed, 15 Sept',
     profImage: require('../../../assets/images/ricky-gervais.png'),
@@ -138,11 +138,12 @@ const Planner = () => {
   );
   return (
     <View style={{flex: 1, backgroundColor: '#FFFFFF'}}>
-      <Headers.TwoHead title={<Text>Planner</Text>} />
+      <Headers.TwoHead title={'Planner'} />
       <Text
         style={{
           margin: 10,
           fontFamily: fontFamily.appTextBold,
+          fontSize: fontSize.h5,
           color: '#464646',
         }}>
         Upcoming Events in London
@@ -172,6 +173,7 @@ const Planner = () => {
           fontFamily: fontFamily.appTextBold,
           margin: 10,
           color: '#464646',
+          fontSize: fontSize.h5,
         }}>
         Discover
       </Text>

@@ -12,7 +12,7 @@ import {
 
 import {appStyles} from '../../../services';
 import {useNavigation} from '@react-navigation/native';
-import {fontFamily} from '../../../services';
+import {fontFamily, fontSize} from '../../../services';
 
 const Kabficard = props => {
   const navigation = useNavigation();
@@ -88,6 +88,7 @@ const Kabficard = props => {
               textAlign: 'center',
               color: '#464646',
               fontFamily: fontFamily.appTextRegular,
+              fontSize: fontSize.regular,
             }}>
             Sponsored by JOE & THE JUICE
           </Text>

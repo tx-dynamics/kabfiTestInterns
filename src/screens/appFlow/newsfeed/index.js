@@ -21,7 +21,7 @@ import {fontFamily} from '../../../services';
 const DATA = [
   {
     id: '1',
-    title: 'oakley',
+    title: 'John Thompson',
     profImage: require('../../../assets/images/prof.png'),
     sceneImage: require('../../../assets/images/scene.png'),
     heartImage: require('../../../assets/icons/heart.png'),
@@ -32,7 +32,7 @@ const DATA = [
   },
   {
     id: '2',
-    title: 'oakley',
+    title: 'John Thompson',
     profImage: require('../../../assets/images/prof.png'),
     sceneImage: require('../../../assets/images/scene.png'),
     heartImage: require('../../../assets/icons/heart.png'),
@@ -43,7 +43,7 @@ const DATA = [
   },
   {
     id: '3',
-    title: 'oakley',
+    title: 'John Thompson',
     profImage: require('../../../assets/images/prof.png'),
     sceneImage: require('../../../assets/images/scene.png'),
     heartImage: require('../../../assets/icons/heart.png'),
@@ -54,7 +54,7 @@ const DATA = [
   },
   {
     id: '4',
-    title: 'oakley',
+    title: 'John Thompson',
     profImage: require('../../../assets/images/prof.png'),
     sceneImage: require('../../../assets/images/scene.png'),
     heartImage: require('../../../assets/icons/heart.png'),
@@ -65,7 +65,7 @@ const DATA = [
   },
   {
     id: '5',
-    title: 'oakley',
+    title: 'John Thompson',
     profImage: require('../../../assets/images/prof.png'),
     sceneImage: require('../../../assets/images/scene.png'),
     heartImage: require('../../../assets/icons/heart.png'),
@@ -76,7 +76,7 @@ const DATA = [
   },
   {
     id: '6',
-    title: 'oakley',
+    title: 'John Thompson',
     profImage: require('../../../assets/images/prof.png'),
     sceneImage: require('../../../assets/images/scene.png'),
     heartImage: require('../../../assets/icons/heart.png'),

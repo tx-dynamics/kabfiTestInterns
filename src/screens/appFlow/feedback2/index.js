@@ -54,7 +54,7 @@ const Feedback2 = props => {
               padding: 10,
               borderRadius: 25,
             }}
-            onPress={() => navigation.navigate('Kabficard')}>
+            onPress={''}>
             <Text
               style={{
                 textAlign: 'center',
